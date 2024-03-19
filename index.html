@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Beijing Floods &amp; Vulnerability assessment</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Yuqing,Qianyu,Xiaoyi,Xingru,Yihan" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <script src="libs/peerjs/peerjs.min.js"></script>
+    <script src="libs/tiny.toast/toast.min.js"></script>
+    <link href="libs/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-broadcast/broadcast.js"></script>
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/mark.js/mark.min.js"></script>
+    <link href="libs/xaringanExtra-search/search.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-search/search.js"></script>
+    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":false}) })</script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"fa10b0215ae74af59995e7844cad5faa","expires":1}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <script src="libs/xaringanExtra_fit-screen/fit-screen.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+
+
+
+
+class: center, middle
+
+# Atmospheric Dynamics Mission-Aeolus
+&lt;br&gt; 
+
+**The first satellite with equipment capable of performing global wind-component-profile observation**
+&lt;br&gt; 
+&lt;br&gt; 
+
+###Xingru Liu
+
+
+---
+
+# What is the Aeolus satellite?
+
+- Aeolus is a satellite launched on August 22, 2018 and retired on April 30, 2023.
+
+- Surpassing scientific expectations and exceeding its planned life in orbit, the mission has been hailed as one of ESA’s most successful.
+
+- It is the first satellite mission to acquire Earth's wind profile on a global scale.
+
+- It carries only one large instrument - a laser Doppler wind lidar called Aladin.
+
+&lt;img src="img/wx.png" width="40%" style="display: block; margin: auto;" /&gt;
+&lt;small&gt;Aeolus is the world's first satellite to measure wind (ESA)&lt;small&gt;
+
+
+---
+
+# Aeolus Satellite details
+
+.pull-left[
+
+* Mission type: Weather satellite
+
+* Launcher/Location: Vega/Kourou
+
+* Launch mass: 1,366 kg (3,012 lb)
+
+* Orbit: Sun-synchronous, dawn-dusk; 320 km (200 mi)
+
+* Inclination: 97.0°
+
+* Technology type: The Aladin sensor is a laser radar (LIDAR) system, specifically it uses UV laser pulses to make measurements.
+]
+
+.pull-right[
+&lt;img src="img/wx2.png" width="150%" style="display: block; margin: auto 0 auto auto;" /&gt;
+&lt;br&gt; 
+&lt;small&gt;(European Space Agency, no date)&lt;small&gt;
+]
+
+---
+
+###The Aeolus mission objectives were to provide accurate global measurements of winds from the surface up to 30 km.
+
+**The Aeolus mission has contributed to:**
+
+-	Improving weather forecasts for society
+
+-	Understanding atmospheric dynamics
+
+-	Providing information on aerosols and clouds
+
+-	Filling the current major gap in the atmospheric observing system
+
+-	nderstanding climate change
+
+-	Helping to track air pollution
+
+-	Tracking desert dust, smoke and volcanic ash
+
+-	Wind-energy management
+
+-	Paving the way for future wind lidar missions
+
+
+---
+
+# Imagery examples
+
+.pull-left[
+
+&lt;img src="img/wx3.jpg" width="150%" style="display: block; margin: auto 0 auto auto;" /&gt;
+
+
+This example of simulated Aeolus horizontal-line-of-sight (HLOS) wind observations(European Centre for Medium-Range Weather Forecasts).
+]
+
+
+.pull-right[
+&lt;img src="img/wx4.jpg" width="150%" style="display: block; margin: auto 0 auto auto;" /&gt;
+
+
+VirES visualisation of the Aeolus wind curtain with RBS settings on 16 July 2020(European Space Agency).
+]
+
+
+
+---
+
+# Significance of Aeolus
+
+&lt;br&gt; 
+
+- **Aeolus pioneered the safe return of uncontrolled re-entry satellites to Earth, but not before it became the first satellite ever to acquire vertical profiles of Earth's winds on a global scale.**
+
+&lt;br&gt; &lt;!-- 这里添加额外的空行 --&gt;
+
+
+- **Aeolus is a pre-operational mission that demonstrates new laser technology and paves the way for future weather satellites to measure atmospheric winds.**
+
+&lt;br&gt; 
+
+
+- **It uses a laser Doppler wind lidar called Aladin, the first such instrument ever launched into space.**
+
+
+---
+
+## Application
+
+**Using wind observations from the Aeolus to estimate numerical weather forecasts model Harmonie–Arome (Hagelin et al., 2021)**
+
+In this study, 3D-Var data assimilation is used to assimilate horizontal line-of-sight (HLOS) winds observed by Aeolus over two different periods to determine the quality of the observations of Aeolus. The differences between the O-B and O-A-SD profiles and the DFS analysis show that the Aeolus data have an impact on the analysis, while the impact of the forecasts is neutral compared to the radiosonde. The study focuses on the observation error standard deviation, while potential observation error correlations are not addressed.
+
+**Using the newly released Aeolus wind product for weather forecasting operations in China (Gue et al., 2021)&lt;br&gt;**
+
+In this study, the Mie cloudy and Rayleigh clear wind products of the Aeolus satellites were evaluated by using wind observations from the Chinese Radar Wind Profiler (RWP) network. Based on the geographic matching of RWP stations with Aeolus satellite tracks, the study defines three matching categories, and these categories of Aeolus wind products are separately analyzed in comparison with the wind observations from RWP. The results show that the Aeolus wind products match well with the wind observations from the Chinese RWP network.
+
+
+---
+
+## Application
+
+**First validation of Aeolus wind observations by airborne Doppler wind lidar measurements (Witschas, 2020)**
+
+
+In this study, two airborne campaigns were conducted with two wind lidars on DLR's Falcon aircraft to validate the ESA's Aeolus mission. In this paper, the systematic and random errors of the Aeolus HLOS wind observations were determined by 2 μm DWL. The results confirm the need to validate the Aeolus wind product and demonstrate that the DLR airborne wind lidar payload is well suited for this mission.
+---
+
+# Reflection
+
+- Aeolus Satellite's Wind Data Significantly Improves Global Weather Forecasts
+
+- I feel that the Aeolus satellite is a pioneer of the space age, and its unique record of global wind data will provide valuable insights long after the mission has ended and returned to the atmosphere.
+
+- The Aeolus satellite plays a key role in improving weather forecasting. The satellite's wind data has significantly improved global weather forecasts.
+
+- Aeolus enables scientists to build complex models of our environment that can then be used to help predict how that environment will behave in the future.
+
+- For example, determining what we will wear tomorrow in our daily lives requires an understanding of looking at the weather forecast and choosing the right clothes based on the temperature.
+
+
+---
+# Reflection
+
+- In addition, Aeolus provides data in areas of the globe that are difficult to measure, such as the tropics. This opens the door for mankind to explore the uncharted territories of the earth.
+
+- In my opinion, without the success of Aeolus, progress in the field of weather forecasting would not be as accurate as it is now.
+
+- The fact that Aeolus data is now used as part of the operational weather forecasting process is a testament to its quality and reliability. I have seen the skill and determination of the engineers in developing this new technology. I am really happy and proud of it.
+
+- In the future, I think its success also paves the way for possible future deployment of Doppler wind lidar satellites in space. Our goal is to keep the Aeolus data running for as long as possible. At the same time, we need to learn how to make better use of these data in order to fully utilize their potential.
+
+---
+
+# References
+
+
+&lt;small&gt;European Centre for Medium-Range Weather Forecasts (2018) Available at: https://www.ecmwf.int/en/about/media-centre/news/2018/aeolus-satellite-launch-paves-way-better-forecasts (Accessed: 27 January 2024)
+
+European Space Agency (2020) Available at: https://earth.esa.int/eogateway/news/a-guide-to-aeolus-range-bin-settings (Accessed: 27 January 2024)
+
+European Space Agency (no date) Available at: https://earth.esa.int/eogateway/missions/aeolus/description (Accessed: 27 January 2024)
+
+Guo, J. P., Liu, B. M., Gong, W., Shi, L. J., Zhang, Y., Ma, Y. Y., Zhang, J., Chen, T.M., Bai, K. X., Stoffelen, A., Leeuw, G. D. and Xu, X. F. (2021) ‘Technical note: First comparison of wind observations from ESA's satellite mission Aeolus and ground-based radar wind profiler network of China’, European Geosciences Union, 21(4), pp. 2945-2958.
+
+Hagelin, S., Azad, R., Lindskog, M., Schyberg, H. and Kornich, H. (2021) ‘Evaluating the use of Aeolus satellite observations in the regional numerical weather prediction (NWP) model Harmonie–Arome’, European Geosciences Union, 14(9), pp. 5925-5938.
+
+Witschas, B., Lemmerz, C., Geiß, A., Lux, O. Marksteiner, U., Rahm, S., Reitebuch, O. and Weiler, F. (2020) ‘First validation of Aeolus wind observations by airborne Doppler wind lidar measurements’, Aeolus data and their application (AMT/ACP/WCD inter-journal SI), 13(5), pp. 2381-2396.&lt;small&gt;
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
